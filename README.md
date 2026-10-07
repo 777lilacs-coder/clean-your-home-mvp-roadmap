@@ -1,441 +1,287 @@
 # Clean Your Home MVP Roadmap
 
-This document is the working plan for building a lean MVP to validate whether students would actually use a home management and routine app.
+This is the working roadmap for the MVP. You can edit this file directly in GitHub and click the checkboxes as you complete tasks.
 
-## Mission
+## Goal
 
-Prove that users will regularly:
+The goal is to validate whether students and young adults actually use an app that helps them:
 - choose a home type
 - explore rooms and objects
 - learn how to care for items
-- save a preferred method
+- save their preferred method
 - add tasks to a routine
 - complete a checklist
 
-This MVP is not about 3D scanning or advanced AR. The goal is to validate the core habit loop.
+This MVP is intentionally focused on the core habit loop. It does not include 3D scanning, AR, or advanced AI features yet.
 
 ## Recommended stack
 
 - Design: Figma
 - App prototype: FlutterFlow
 - Backend: Firebase
-- Auth: Firebase Authentication
+- Auth: Firebase Auth
 - Database: Firestore
 - Storage: Firebase Storage
-- Notifications: Firebase Cloud Messaging (optional)
-- AI help: ChatGPT / Copilot / Cursor for code generation and ideation
+- AI help: ChatGPT / Copilot / Cursor
 
-## Tools and resources
+## Tools and links
 
 - FlutterFlow: https://flutterflow.io/
 - Firebase: https://firebase.google.com/
 - Figma: https://www.figma.com/
 - Flutter docs: https://docs.flutter.dev/
 - Firebase docs: https://firebase.google.com/docs
-- ChatGPT: https://chat.openai.com/
 - GitHub: https://github.com/
 
 ## MVP scope
 
-### Include
-- Home type selection (apartment, dorm, house)
-- Room list
-- Object detail pages
-- Cleaning or care instructions
-- Saved cleaning methods
-- Recurring routine creation
-- Checklist / Today view
-- Task completion tracking
-- Minimal onboarding
+### Included
+- [ ] Home type selection (apartment, dorm, house)
+- [ ] Room list
+- [ ] Object detail pages
+- [ ] Cleaning or care instructions
+- [ ] Saved cleaning methods
+- [ ] Recurring routine creation
+- [ ] Checklist / Today view
+- [ ] Task completion tracking
+- [ ] Minimal onboarding
 
-### Exclude for now
-- 3D walking simulation
-- AR scanning
-- AI home detection
-- Household sharing
-- Brand partnerships
-- Commerce integrations
-- Generic productivity dashboards
+### Excluded for now
+- [ ] 3D walking simulation
+- [ ] AR scanning
+- [ ] AI home detection
+- [ ] Household sharing
+- [ ] Brand partnerships
+- [ ] Commerce integrations
+- [ ] Heavy productivity dashboards
 
-## 30-day timeline
+## 30-day roadmap
 
-## Week 1 — Define and design the MVP
+### Week 1 — Define and design the MVP
 
-### Day 1: Decide the real problem to validate
-- Finalize the single goal: do users actually use the routine-building loop?
-- Define target user: university students and young adults
-- Write a 1-page problem statement
-
-Checklist:
+#### Day 1: Define the real problem
 - [ ] Write a short problem statement
 - [ ] Identify the primary user
-- [ ] Clarify what success means
+- [ ] Write what success looks like
 
-### Day 2: Define the product promise
-Create a short, simple promise like:
-- “A simple app that helps you manage your home and build routines without overwhelm.”
+#### Day 2: Define the product promise
+- [ ] Write the product promise in one sentence
+- [ ] Describe the core user pain point
+- [ ] Write 3 outcomes the app should support
 
-Checklist:
-- [ ] Write the product promise
-- [ ] Note the target user pain point
-- [ ] Write 3 outcomes the app should help with
+#### Day 3: Define the MVP user flow
+- [ ] Map the user journey from home setup to task completion
+- [ ] List the screens needed
+- [ ] Remove anything that is not essential for validation
 
-### Day 3: Define the MVP user flow
-Map the basic loop:
-1. User chooses home type
-2. User sees room list
-3. User taps a room
-4. User taps an object
-5. User sees cleaning instructions
-6. User saves preferred method
-7. User adds to routine
-8. User sees checklist for today
-9. User completes task
+#### Day 4: Create the Figma screens
+- [ ] Welcome / onboarding screen
+- [ ] Home type selection screen
+- [ ] Room selection screen
+- [ ] Room detail screen
+- [ ] Object detail screen
+- [ ] Saved methods screen
+- [ ] Today checklist screen
+- [ ] Routine setup screen
 
-Checklist:
-- [ ] Finalize basic flow
-- [ ] List all screens needed
-- [ ] Remove anything not required for validation
+#### Day 5: Walk through the flow yourself
+- [ ] Run through the prototype in order
+- [ ] Note where the flow feels confusing
+- [ ] Simplify wording and layout
 
-### Day 4: Create the app screens in Figma
-Create these screens:
-- Welcome / onboarding
-- Home type selection
-- Room selection
-- Room detail
-- Object detail
-- Saved methods
-- Checklist / Today
-- Routine setup
-
-Checklist:
-- [ ] Design onboarding screen
-- [ ] Design home type screen
-- [ ] Design room screen
-- [ ] Design object detail screen
-- [ ] Design checklist screen
-- [ ] Design routine screen
-
-### Day 5: Test the flow with yourself
-Walk through the full flow as if you are a user.
-Ask:
-- Is it intuitive?
-- Is it calm?
-- Is it too heavy?
-- Is the emotional tone right?
-
-Checklist:
-- [ ] Run through each screen in order
-- [ ] Note confusing areas
-- [ ] Simplify labels and wording
-
-### Day 6: Review and simplify
-Remove anything that feels like extra complexity.
-This app should feel supportive, not overwhelming.
-
-Checklist:
+#### Day 6: Simplify the product
 - [ ] Remove extra screens
-- [ ] Remove clutter
+- [ ] Remove unnecessary text
 - [ ] Reduce cognitive load
 
-### Day 7: Lock the prototype direction
-At the end of Week 1, you should have a clear MVP direction and a designed flow.
+#### Day 7: Lock the prototype direction
+- [ ] Finalize the screen set
+- [ ] Finalize the tone and app personality
+- [ ] Confirm the day-1 MVP goal
 
-Checklist:
-- [ ] Finalize screen set
-- [ ] Finalize content tone
-- [ ] Confirm MVP goal
+### Week 2 — Build the prototype
 
-## Week 2 — Build the prototype
-
-### Day 8: Set up the project
-Create the app in FlutterFlow and connect Firebase.
-
-Checklist:
+#### Day 8: Set up the project
 - [ ] Create FlutterFlow project
 - [ ] Create Firebase project
 - [ ] Connect FlutterFlow to Firebase
 - [ ] Set up Firebase Authentication
 
-### Day 9: Build user onboarding
-Create welcome / onboarding flow.
+#### Day 9: Build onboarding
+- [ ] Welcome screen
+- [ ] Home type selection screen
+- [ ] Home setup screen
 
-Checklist:
-- [ ] Add welcome screen
-- [ ] Add home type selection screen
-- [ ] Add room setup or home setup screen
+#### Day 10: Build the data model
+- [ ] User collection
+- [ ] Home collection
+- [ ] Room collection
+- [ ] Object collection
+- [ ] Task collection
+- [ ] Routine collection
+- [ ] SavedMethod collection
 
-### Day 10: Build room and object model
-Set up the core data structure.
+#### Day 11: Build room list screen
+- [ ] Room cards
+- [ ] Room selection interaction
+- [ ] Display home status
 
-Suggested data model:
-- User
-- Home
-- Room
-- Object
-- Task
-- Routine
-- SavedMethod
+#### Day 12: Build object detail screen
+- [ ] Object title
+- [ ] Description
+- [ ] Cleaning frequency
+- [ ] Instructions
+- [ ] Save method action
+- [ ] Add to routine action
 
-Checklist:
-- [ ] Create user collection
-- [ ] Create home collection
-- [ ] Create room collection
-- [ ] Create object collection
-
-### Day 11: Build room list screen
-Show rooms in a home and allow selecting rooms.
-
-Checklist:
-- [ ] Add room cards
-- [ ] Add room selection behavior
-- [ ] Display room count and status
-
-### Day 12: Build object detail screen
-Create object cards with:
-- object title
-- description
-- cleaning frequency
-- instructions
-- save method action
-- add to routine action
-
-Checklist:
-- [ ] Create object card design
-- [ ] Add object description section
-- [ ] Add cleaning frequency section
-- [ ] Add method actions
-
-### Day 13: Build saved methods
-Users should be able to save their preferred method for an item.
-
-Checklist:
-- [ ] Add save method button
+#### Day 13: Build saved methods
+- [ ] Save method button
 - [ ] Store method in database
-- [ ] Display saved methods in a list
+- [ ] Display saved methods list
 
-### Day 14: Build routine creation
-Users should be able to assign a task to a recurring routine.
-
-Checklist:
-- [ ] Add routine creation screen
+#### Day 14: Build routine creation
+- [ ] Add routine creation flow
 - [ ] Add recurrence options
-- [ ] Add scheduling flow
+- [ ] Connect to task scheduling
 
-## Week 3 — Test the habit loop
+### Week 3 — Test the habit loop
 
-### Day 15: Build the checklist / Today screen
-This is where the app proves usefulness.
-
-Checklist:
-- [ ] Add Today view
+#### Day 15: Build the Today checklist
+- [ ] Add Today screen
 - [ ] Show tasks due today
 - [ ] Allow marking tasks complete
 - [ ] Show next task suggestion
 
-### Day 16: Add recurring tasks
-Support:
-- daily
-- weekly
-- biweekly
-- monthly
-- quarterly
-- yearly
+#### Day 16: Add recurring tasks
+- [ ] Daily tasks
+- [ ] Weekly tasks
+- [ ] Biweekly tasks
+- [ ] Monthly tasks
+- [ ] Quarterly tasks
+- [ ] Yearly tasks
 
-Checklist:
-- [ ] Add recurring task logic
-- [ ] Show due dates
-- [ ] Allow task completion
+#### Day 17: Improve the object-to-routine flow
+- [ ] Connect object detail to routine creation
+- [ ] Remove friction from the path
+- [ ] Test that the journey is obvious
 
-### Day 17: Add object-to-routine flow
-Make sure users can go from object detail to routine creation easily.
-
-Checklist:
-- [ ] Connect object detail to add routine flow
-- [ ] Ensure path is intuitive
-- [ ] Remove friction
-
-### Day 18: Add saved method library
-Users should see a list of their saved cleaning methods.
-
-Checklist:
+#### Day 18: Create the saved method library
 - [ ] Create saved method list
 - [ ] Add edit/remove actions
 - [ ] Show method details
 
-### Day 19: Create a simple personal routines section
-This can be separate from home for now.
+#### Day 19: Add a personal routines section
+- [ ] Add a simple personal routines tab
+- [ ] Add face / teeth / hair / body placeholders if needed
+- [ ] Keep it optional and lightweight
 
-Checklist:
-- [ ] Add personal routines tab
-- [ ] Add face, teeth, hair, body routines or placeholders
-- [ ] Keep it optional and simple
+#### Day 20: Add an “I have 10 minutes” mode
+- [ ] Add a duration selector
+- [ ] Suggest tasks based on selected time
+- [ ] Keep suggestions realistic and calm
 
-### Day 20: Add an “I have 10 minutes” mode
-This is a high-value feature for low-energy users.
-
-Checklist:
-- [ ] Add time selector
-- [ ] Suggest tasks based on selected duration
-- [ ] Keep suggestions realistic
-
-### Day 21: End-of-week usability pass
-Review early product flow and reduce friction.
-
-Checklist:
+#### Day 21: Run a usability pass
 - [ ] Test all flows end-to-end
 - [ ] Remove confusing labels
-- [ ] Check text tone
-- [ ] Check visual hierarchy
+- [ ] Review visual hierarchy
 
-## Week 4 — Validate with users
+### Week 4 — Validate with real users
 
-### Day 22: Write the user testing script
-Create a 15-minute user testing script.
+#### Day 22: Write the user testing script
+- [ ] Prepare a 15-minute test script
+- [ ] Draft interview questions
+- [ ] Prepare notes template
 
-Questions:
-- What do you think this app is for?
-- Would you use it?
-- What part feels most useful?
-- What part feels annoying?
-- Would you use it weekly?
-- What would make you come back?
-
-Checklist:
-- [ ] Write testing script
-- [ ] Set up interview questions
-- [ ] Prepare consent instructions
-
-### Day 23: Test with 3–5 student users
-Talk through the prototype.
-
-Checklist:
-- [ ] Run 3–5 user tests
+#### Day 23: Test with student users
+- [ ] Run 3-5 tests
 - [ ] Record reactions
-- [ ] Document friction points
+- [ ] Note pain points
 
-### Day 24: Review feedback and identify patterns
-Focus on repeat feedback.
-
-Checklist:
+#### Day 24: Review the feedback
 - [ ] Group feedback into themes
-- [ ] Identify top 3 pain points
-- [ ] Find strongest feature requests
+- [ ] Find repeat pain points
+- [ ] Identify the strongest feature requests
 
-### Day 25: Improve the onboarding and core flow
-Respond to what users actually need.
+#### Day 25: Improve onboarding and core flow
+- [ ] Reduce confusion in onboarding
+- [ ] Simplify the hardest step
+- [ ] Improve the route from object to routine
 
-Checklist:
-- [ ] Adjust onboarding based on feedback
-- [ ] Simplify the most confusing step
-- [ ] Create smoother object-to-routine actions
-
-### Day 26: Add a basic engagement layer
-Make it feel useful enough to return.
-
-Checklist:
-- [ ] Add simple “due soon” indicators
-- [ ] Add “today” summary
+#### Day 26: Add engagement cues
+- [ ] Add due-soon indicators
+- [ ] Add summary for today
 - [ ] Add completion states
 
-### Day 27: Run another round of testing
-Test again with 2–3 users after changes.
+#### Day 27: Run a second round of testing
+- [ ] Test again with 2-3 users
+- [ ] Check whether friction improved
+- [ ] Check whether users are more engaged
 
-Checklist:
-- [ ] Retest with users
-- [ ] Check if friction is reduced
-- [ ] Check if users are more engaged
-
-### Day 28: Final polish and bug fixing
-Fix obvious issues before demo.
-
-Checklist:
+#### Day 28: Final polish and bug fixing
 - [ ] Fix broken interactions
-- [ ] Review visual design consistency
+- [ ] Review visual consistency
 - [ ] Remove dead ends
-- [ ] Ensure app flows are smooth
+- [ ] Ensure the core flow feels smooth
 
-### Day 29: Create the demo and pitch deck
-Prepare the key story for your prototype.
-
-Checklist:
+#### Day 29: Create the demo and pitch summary
 - [ ] Capture screen recordings
-- [ ] Write short product summary
-- [ ] Create 3 key user value points
+- [ ] Write a short product summary
+- [ ] Write 3 key value points
 
-### Day 30: Decide the next step
-Based on gathered evidence, decide:
-- continue with this app
-- adjust the concept
-- find a technical co-founder
-- switch to stronger validation
+#### Day 30: Decide the next step
+- [ ] Review evidence and feedback
+- [ ] Decide if the concept has traction
+- [ ] Choose whether to continue, pivot, or recruit support
 
-Checklist:
-- [ ] Review metrics and feedback
-- [ ] Decide whether concept has traction
-- [ ] Write next-step plan
-- [ ] Choose whether to build, pivot, or recruit support
+## Metrics to watch
 
-## What to measure
-
-Track these metrics across the prototype:
-- number of sign-ups
-- number of home setups
-- number of rooms created
-- number of objects viewed
-- number of saved methods
-- number of routines created
-- number of checklist tasks completed
-- number of users returning after 3–7 days
-
-If users do not return or do not complete routines, this concept needs refinement.
+- [ ] Number of sign-ups
+- [ ] Number of home setups
+- [ ] Number of rooms created
+- [ ] Number of objects viewed
+- [ ] Number of methods saved
+- [ ] Number of routines created
+- [ ] Number of checklist tasks completed
+- [ ] Number of users returning after 3-7 days
 
 ## Decision gates
 
-### Continue if:
-- users understand the app quickly
-- they can create a routine without confusion
-- they save methods or tasks
-- they complete tasks during testing
-- they say they would use it weekly
+### Continue if
+- [ ] Users understand the app quickly
+- [ ] They can create a routine without confusion
+- [ ] They save methods or tasks
+- [ ] They complete tasks during testing
+- [ ] They say they would use it weekly
 
-### Pivot if:
-- users do not understand the purpose
-- they say the app feels too cluttered
-- they struggle to navigate rooms and objects
-- they don’t see value beyond a checklist
+### Pivot if
+- [ ] Users do not understand the purpose
+- [ ] They say the app feels cluttered
+- [ ] They struggle to navigate rooms and objects
+- [ ] They do not see value beyond a checklist
 
-## Suggested launch-ready statement after validation
+## Suggested validated product statement
 
 “A simple home and routine app for students and young adults that turns everyday tasks into visual, calm, manageable routines.”
 
-## Key principle
+## Final principle
 
-Do not overbuild the product before proving that people want the core action:
+Do not overbuild before proving that users want the core action:
 - choose a home
 - understand a task
 - save a method
 - build a routine
 - complete it regularly
 
-That is the core validation loop.
-
-## Repository and planning resources
-
-- GitHub repo: https://github.com/777lilacs-coder/clean-your-home-mvp-roadmap
-- Figma: https://www.figma.com/
-- FlutterFlow: https://flutterflow.io/
-- Firebase: https://firebase.google.com/
-- Flutter docs: https://docs.flutter.dev/
+That is the key validation loop.
 
 ## Optional next step
 
-After finishing this 30-day roadmap, the next document to create could be:
-- MVP screen-by-screen specification
-- Firebase data model schema
-- user interview script
-- technical onboarding checklist for FlutterFlow + Firebase
+After this roadmap, the next useful document would be:
+- [ ] MVP screen-by-screen specification
+- [ ] Firebase data model schema
+- [ ] User interview script
+- [ ] FlutterFlow + Firebase onboarding checklist
 
-## Final note
+## Notes
 
-This roadmap is intentionally lean. It focuses on validating whether users will actually engage with the product, which is the most important question right now.
+This roadmap is intentionally lean and focused on validation. The most important question right now is whether the product pattern is useful enough to keep building.
